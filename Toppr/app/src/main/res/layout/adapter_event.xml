@@ -1,0 +1,69 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="2dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#F9F9F9">
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_event_place_holder"/>
+
+                <ImageView
+                    android:id="@+id/ivFav"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:src="@drawable/ic_empty_star"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+                <ImageView
+                    android:id="@+id/ivCategory"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:typeface="sans"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="#000000"
+                android:shadowColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

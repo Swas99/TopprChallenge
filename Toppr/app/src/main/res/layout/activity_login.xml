@@ -1,0 +1,87 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="-9dp"
+        app:cardElevation="8dp"
+        >
+        <ImageView
+            android:id="@+id/lotteryImage"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:background="@drawable/ic_toppr_270x270"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            />
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-10dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btnConnectGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin = "18dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                />
+            <!--<Button-->
+                <!--android:id="@+id/btnConnectGoogle"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin = "18dp"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:text="Connect using G+"-->
+                <!--android:background="@drawable/bg_blue_btn"/>-->
+
+            <Button
+                android:id="@+id/btnAutoLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin = "18dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:text="Auto connect"
+                android:background="@drawable/bg_blue_btn"/>
+
+            <Button
+                android:id="@+id/btnLoginManual"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_margin = "18dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:text="Use credentials"
+                android:background="@drawable/bg_blue_btn"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
