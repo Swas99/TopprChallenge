@@ -69,6 +69,7 @@ public class EventListAdapter
         downloadAndSetImage(holder.ivLogo,image_url);
 
         holder.ivFav.setTag(position);
+        holder.thisEvent.setTag(position);
         if(MySQLiteHelper.checkEventForFavorite(mContext,u_id,itemList.get(position).getId()))
         {
             itemList.get(position).setFav(true);
@@ -190,3 +191,4 @@ public class EventListAdapter
 
 
 }
+
