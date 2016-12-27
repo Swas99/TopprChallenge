@@ -3,8 +3,18 @@
 Displays a list of events fetched from an api.
 User can sort/filter, mark favorite, etc.
 
-**SQLite**
-**Image caching**
-**Google login**
-**Volley**
+**SQLite**;
+
+**Image caching**;
+
+**Google login**;
+
+**Volley**;
+
+**RecyclerView**;
+
+**CardView**;
+
+**Navigation Drawer**;
+
 **SharedPreferences**
