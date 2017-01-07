@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.archer.thought_works_got" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.archer.thought_works_got"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <activity
+            android:name="com.archer.thought_works_got.modules.home.Home"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".modules.king_details.KingDetails"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.archer.thought_works_got.modules.home.Home" />
+        <activity
+            android:name="com.archer.thought_works_got.modules.help.Help"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.archer.thought_works_got.modules.home.Home" />
+
+
+    </application>
+
+</manifest>

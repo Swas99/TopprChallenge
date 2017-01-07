@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">G.O.T.</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="desc_nav_icon">nav icon</string>
+    <string name="enter_your_details"><u>Enter your details</u></string>
+    <string name="reach_me_at_email">Developed by Swastik Sahu\nReach me at swsahu9@gmail.com</string>
+    <string name="filter">Filter</string>
+    <string name="favorites">Favorites</string>
+    <string name="description"><u>Description</u></string>
+    <string name="filters">Filters</string>
+    <string name="sort_by">Sort by</string>
+    <string name="search">Search</string>
+    <string-array name="nav_menu">
+        <item >Header</item>
+        <item >Help</item>
+        <item >Exit</item>
+        <item >Footer</item>
+    </string-array>
+
+
+</resources>
